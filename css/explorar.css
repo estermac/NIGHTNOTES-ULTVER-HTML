@@ -1,0 +1,355 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #0E4B43;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.app-container {
+  width: 100vw;
+  min-height: 100vh;
+  background: #0E4B43;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.topbar {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  color: #fff; 
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.logo-circle img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-size: 20px;
+}
+
+.back-button {
+  display: inline-block;
+  background-color: #FDFBF0; 
+  color: #000000;            
+  text-decoration: none;     
+  padding: 8px 20px;         
+  border-radius: 50px;       
+  font-size: 14px;           
+  font-weight: bold;         
+  transition: background-color 0.2s, transform 0.1s; 
+}
+
+.heart {
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.hero {
+  width: 100%;
+  background: #4A0E4E; 
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 25px 30px;
+}
+
+.hero h1 {
+  font-size: 42px; 
+  color: #FFF;
+  font-weight: bold;
+  line-height: 1.1;
+  letter-spacing: 0.5px;
+}
+
+.recomendacao-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.subtitulo-semana {
+  color: #FFF;
+  font-size: 18px;
+  text-align: right;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.capas-carrossel {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.capas-carrossel img {
+  width: 80px;
+  height: 110px;
+  object-fit: cover;
+}
+
+.carousel-arrow {
+  color: #2c0530;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0 10px;
+  letter-spacing: -4px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; 
+  padding: 30px;
+  flex: 1;
+}
+
+.left-side {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.section h2 {
+  color: #041816;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: bold;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.cards {
+  display: flex;
+  gap: 25px;
+}
+
+.card {
+  position: relative;
+  width: 125px;
+  height: 125px;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .play-btn {
+  position: absolute;
+  right: 6px;
+  bottom: 6px;
+  width: 28px;
+  height: 28px;
+  background: #FFF;
+  color: #000;
+  border-radius: 50%;
+  border: none;
+  font-size: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sidebar {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px; 
+}
+
+.ranking-card {
+  background: #122220; 
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.sidebar-title {
+  background: rgba(255, 255, 255, 0.03);
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 15px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.ranking-list {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.rankartista {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 0; 
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08); 
+}
+
+
+.rankartista:last-of-type {
+  border-bottom: none;
+}
+
+.artista-foto {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #0E4B43;
+}
+
+.rank-detalhes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  font-size: 16px;
+  color: #fff;
+}
+
+.rank-nome {
+  font-weight: bold;
+}
+
+.rank-ouvintes {
+  font-size: 14px;
+  color: #FFF;
+}
+
+
+.ranking-chevron {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 12px 0;
+  cursor: pointer;
+  border-top: 1px solid rgba(255, 255, 255, 0.08); 
+  transition: background 0.2s;
+}
+
+
+.ranking-chevron:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+@media (max-width: 768px) {
+
+  .topbar {
+    padding: 0 15px;
+  }
+
+  
+  .hero {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    padding: 35px 20px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  
+  .recomendacao-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .subtitulo-semana {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .capas-carrossel {
+    display: flex;
+    flex-wrap: nowrap; 
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow-x: auto;
+    padding: 10px 0;
+  }
+
+ 
+  .capas-carrossel img {
+    width: 55px;
+    height: 75px;
+    flex-shrink: 0; 
+  }
+
+  .carousel-arrow {
+    font-size: 24px;
+    padding: 0 5px;
+  }
+
+
+  .content {
+    flex-direction: column;
+    padding: 20px;
+    gap: 40px;
+  }
+
+  .left-side,
+  .sidebar {
+    width: 100%;
+  }
+
+  .section h2 {
+    text-align: center; 
+    margin-bottom: 16px;
+  }
+
+  
+  .cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; 
+  }
+
+ 
+  .card {
+    width: 100px;
+    height: 100px;
+  }
+
+  
+  .rank-detalhes {
+    font-size: 14px;
+  }
+}
